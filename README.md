@@ -6,9 +6,9 @@ Why extract Coq to F#?
 ----------------------
 Coq supports 3 extraction target languages by default:
 
-# Scheme (dynamically typed, strict, concurrent)
-# Ocaml (statically typed, strict, single-threaded)
-# Haskell (statically typed, lazy, concurrent)
+1. Scheme (dynamically typed, strict, concurrent)
+2. Ocaml (statically typed, strict, single-threaded)
+3. Haskell (statically typed, lazy, concurrent)
 
 So if you'd like to extract Coq code to a statically typed, strict, concurrent language, you're out
 of luck with the default targets (modulo some ongoing experimental work by OCamlPro to have true
