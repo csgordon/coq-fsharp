@@ -1,9 +1,13 @@
-coq-fsharp
-==========
+# coq-fsharp
+
 Tools for extracting Coq code to F#.
 
-Why extract Coq to F#?
-----------------------
+## Why extract Coq to F#?
+
+There are two main use cases for extracting a Coq program to F#: using F# as a modern runtime system, or using verified code in a .NET project.
+
+### F# As A Runtime System
+
 Coq supports 3 extraction target languages by default:
 
 1. Scheme (dynamically typed, strict, concurrent)
@@ -16,6 +20,10 @@ parallelism in OCaml).  Admittedly, Coq doesn't actually have any concurrency in
 this seems important for the growing set of DSLs for verified programming that are implemented as an
 embedding into Coq (e.g. [Ynot](http://ynot.cs.harvard.edu/),
 [Bedrock](http://plv.csail.mit.edu/bedrock/), or [RGref](https://github.com/csgordon/rgref)).
+
+### Embedding Verified Code in a .NET Project
+
+## How
 
 Fortunately, there is a significant subset of OCaml that is also valid F# code, so with a bit of
 remapping certain primitives using standard Coq Extraction commands, much Coq code can be extracted
