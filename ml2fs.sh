@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIRNAME=`dirname $1`
-BASENAME=`basename --suffix .ml $1`
+BASENAME=`basename $1 .ml`
 FILE="${DIRNAME}/${BASENAME}.fs"
 OUT="${DIRNAME}/${BASENAME}.dll"
 
