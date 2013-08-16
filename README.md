@@ -37,6 +37,7 @@ The heart of the system is currently a script 'ml2fs.sh' which rewrites an OCaml
 
 For a simple taste, look at the Makefile, or run 'make test' on a fresh checkout.
 
-## Installing F#
+Installing F#
+-------------
 
 The [F# Software Foundation](http://fsharp.org) has directions for most platforms.  For Debian/Ubuntu, the latest Mono packages are broken, so we suggest following the instructions [here](https://gist.github.com/csgordon/6195154).
