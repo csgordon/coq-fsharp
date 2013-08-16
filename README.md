@@ -31,4 +31,12 @@ directly to F#.  The main restrictions I'm currently aware of are:
 
 - F#'s module system does not include functors, so Coq code using functors won't extract well.
 
+## Extracting Coq to F#
 
+The heart of the system is currently a script 'ml2fs.sh' which rewrites an OCaml file to an F# file in the same directory (assuming the OCaml code is in the supported subset).  The intent is that the subset of OCaml handled by the script is that resulting from extracting a Coq program with no non-trivial module usage after having imported 'FSharp.v'.
+
+For a simple taste, look at the Makefile, or run 'make test' on a fresh checkout.
+
+## Installing F#
+
+The [F# Software Foundation](http://fsharp.org) has directions for most platforms.  For Debian/Ubuntu, the latest Mono packages are broken, so we suggest following the instructions [here](https://gist.github.com/csgordon/6195154).
