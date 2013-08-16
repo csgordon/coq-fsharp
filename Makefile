@@ -1,10 +1,10 @@
 
-default: fsinclude
+default: Coq.dll
 
-fsinclude: Coq.fs
-	fsharpc -a Coq.fs
+%.dll: %.fs
+	fsharpc -a $<
 
-grabtests: grab_cic.sh
+CoqInCoq: grab_cic.sh Coq.dll
 	./grab_cic.sh
 	tar -zxvf CoqInCoq.tar.gz
 
